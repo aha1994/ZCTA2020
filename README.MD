@@ -16,7 +16,7 @@ I used the zip code prefixes [wiki page](https://en.wikipedia.org/wiki/List_of_Z
 In order to facilitate faster loading/drawing time in my mapping applications, I simplified the geometries for each shape in the GeoJSON files by location. This is done in the SimplifyGeometriesZCTAs.ipynb file. The file contains a custom function where you can specify the toleance when simplifying. A larger tolerance will result in smaller GeoJSON files and faster mapping time at the cost of more shoppy ZCTA shapes. For my use case I settled on a tolerance value of 0.0005 as the best balance of these trade-offs. 
 
 ###### Example Map
-![Georgia 2020 ZCTAs](img/Georgia ZCTAs 2020 Example.png)
+![Georgia 2020 ZCTAs](img/Georgia ZCTAs 2020 Example.PNG)
 
 
 
