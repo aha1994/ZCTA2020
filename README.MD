@@ -20,5 +20,5 @@ In order to facilitate faster loading/drawing time in my mapping applications, I
 
 
 
-Hopefully these files/notebooks can provide some use to other. If can improve upon this or knows of a better way to go about this kind of mapping please reach out and let me know.
+Hopefully these files/notebooks can provide some use to others. If you can improve upon this or knows of a better way to go about this kind of mapping please reach out and let me know. Cheers!
 
