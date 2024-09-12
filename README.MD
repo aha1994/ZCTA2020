@@ -13,12 +13,12 @@ I used the zip code prefixes [wiki page](https://en.wikipedia.org/wiki/List_of_Z
 
 
 ###### Simplifying the Shape Files for each Location to Reduce File Size
-In order to facilitate faster loading/drawing time in my mapping applications, I simplified the geometries for each shape in the GeoJSON files by location. This is done in the SimplifyGeometriesZCTAs.ipynb file. The file contains a custom function where you can specify the toleance when simplifying. A larger tolerance will result in smaller GeoJSON files and faster mapping time at the cost of more shoppy ZCTA shapes. For my use case I settled on a tolerance value of 0.0005 as the best balance of these trade-offs. 
+In order to facilitate faster loading/drawing time in my mapping applications, I simplified the geometries for each shape in the GeoJSON files by location. This is done in the SimplifyGeometriesZCTAs.ipynb file. The file contains a custom function where you can specify the toleance when simplifying. A larger tolerance will result in smaller GeoJSON files and faster mapping time at the cost of more shoppy ZCTA shapes. For my use case I settled on a tolerance value of 0.0005 as the best balance of these trade-offs. The simplified GeoJSON files with a tolerance of 0.0005 are provided in the 2020 Census Simplified Folder.
 
 ###### Example Map
-![Georgia 2020 ZCTAs](/img/Georgia ZCTAs 2020 Example)
+![Georgia 2020 ZCTAs](https://github.com/aha1994/zcta2020/blob/main/img/Georgia%20ZCTAs%202020%20Example.PNG)
 
 
 
-Hopefully these files/notebooks can provide some use to other. If can improve upon this or knows of a better way to go about this kind of mapping please reach out and let me know.
+Hopefully these files/notebooks can provide some use to others. If you can improve upon this or knows of a better way to go about this kind of mapping please reach out and let me know. Cheers!
 
