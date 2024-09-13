@@ -6,7 +6,7 @@ Zip codes (ZCs) and zip code tabulation areas (ZCTAs) are not the same thing and
 #### My process
 
 ###### Convert Main 2020 Shape File to GeoJSON
-In order to work with the main 2020 shape file in the Jupyter notebooks, it first needs to be converted to a GeoJSON file. To do this, I loaded the shape file into [QGIS software](https://qgis.org/) and exported the layer containing all ZCTAs to a GeoJSON file. This file is ~1.3G and may take awhile to export. Once the file is ready, it can be placed in the data folder of this repo to run the ParseStatesFromMainFile.ipynb file.
+In order to work with the [main 2020 shape file](https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2020&layergroup=ZIP+Code+Tabulation+Areas) in the Jupyter notebooks, it first needs to be converted to a GeoJSON file. To do this, I loaded the shape file into [QGIS software](https://qgis.org/) and exported the layer containing all ZCTAs to a GeoJSON file. This file is ~1.3G and may take awhile to export. Once the file is ready, it can be placed in the data folder of this repo to run the ParseStatesFromMainFile.ipynb file.
 
 ###### Mapping ZCs to ZCTAs by Location
 I used the zip code prefixes [wiki page](https://en.wikipedia.org/wiki/List_of_ZIP_Code_prefixes) in order to map ZCTAs to all 50 states, DC, Puerto Rico, Guam, and the Virgin Islands. This data is stored in a csv file in the data folder, and uses the first 3 digits of a ZC to map to a state/territory. To reiterate, these don't map 1:1 and will not produce/follow exact state boundaries/shapes. However, for my use case this method was close enough. The jupyter notebook file ParseStatesFromMainFile.ipynb does this mapping. 
